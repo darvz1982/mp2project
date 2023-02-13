@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>La Quinta by Wyndham Madera</title>
+	<script>
+		function choosePlace() {
+			const url = document.getElementById("selectList").value;
+			window.location = url;
+		}
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="styleCal.css">
+	
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+	<header class="banner">
+		
+		<nav class="navigation" id="panelOne">
+			
+			<a href="index.html"><span id="home">Home</span></a>
+			<a href="#about-section"><span id="about">About</span></a>
+			<a href="#gallery-section"><span id="gallery">Gallery</span></a>
+			<a href="#review-section"><span id="review">Guest Reviews</span></a>
+			<a href="#contact-section"><span id="contact">Contact</span></a>
+			<a href="book-modalCal.html"><span id="book">Book Now</span></a>
+
+		</nav>
+		
+		<nav class="navBar">
+			
+			<button id="bar"><i class="fa fa-bars fa-2x" id="bar"></i></button>
+			<a href="book-modalCal.html"><span id="book" class="bookMe">Book Now</span></a>
+
+		</nav>
+
+		<nav id="panelTwo">
+			
+			<span class="close">&times;</span>
+
+			<a href="index.html"><span id="home">Home</span></a>
+			<a href="#about-section"><span id="about">About</span></a>
+			<a href="#gallery-section"><span id="gallery">Gallery</span></a>
+			<a href="#review-section"><span id="review">Guest Reviews</span></a>
+			<a href="#contact-section"><span id="contact">Contact</span></a>
+			<a href="book-modalCal.html"><span id="bookTwo">Book Now</span></a>
+
+		</nav>
+
+		<div class="business">
+			
+			<p id="negi">La Quinta by Wyndham Madera</p>
+			<hr class="line"><p id="rent">Hotel and Restaurant</p><hr class="line">
+
+		</div>
+
+	</header>
+
+	<section>
+		<!---weather app-->
+		<div class="card">
+			<div class="container">
+				<div class="search">
+					<select class="search-bar" id="selectList" name="list">
+					
+					<option value="bulacan.html">Bulacan, Phillipines</option>
+					<option value="paris.html">Paris France</option>
+					<option value="tokyo">Tokyo, Japan</option>
+					<option value="california" selected>California, USA</option>
+					<option value="france">France</option>
+					<option value="cape town">Cape Town</option>
+					
+					
+					</select>
+					<button type="button" value="Go" onclick="choosePlace()">Search</button>
+						
+					
+				</div>
+			</div>
+			<br>
+		
+			<div class="container">
+				<div class="form">
+					<div class="weather">
+						<div class="weather-detail">
+							
+							<h2 class="city"></h2>
+							<div class="iconDescription">
+							<p class="description"></p>
+							<img src="" alt="" class="icon">
+							</div>
+							<p class="temp"></p>
+							<p class="humidity"></p>
+							<p class="wind"></p>
+							
+						</div>
+				   </div>
+				</div>
+			</div>
+			</div>
+			<script src="weather.js"></script>
+		
+		
+		<div class="cover"></div> <!-- Image inserted through CSS. -->
+			
+		<div class="services">
+			
+			<div class="service1">
+				
+				<i class="fa fa-wifi fa-2x"></i>
+				<p>Free Wi-Fi</p>
+
+			</div>
+
+			<div class="service2">
+				
+				<i class="fa fa-bed fa-2x"></i>
+				<p>Fully Furnished</p>
+
+			</div>
+
+			<div class="service3">
+				
+				<i class="fa fa-motorcycle fa-2x"></i>
+				<p>2-wheeler <br> Parking</p>
+
+			</div>
+
+		</div>
+
+		<div id="about-section">
+			
+			<h3 id="about-head">About</h3>
+
+			<p id="about-description">Join us at La Quinta Inn & Suites by Wyndham Madera, perfectly positioned off Highway-99 for easy access to all that the area has to offer. Explore nearby attractions like the Madera Wine Trail, ApCal, and Madera Speedway. If you're flying in our out of the area, Fresno Yosemite International Airport (FAT) is less than 30 miles from our hotel. While staying with us, you'll love amenities like free breakfast, an outdoor pool, and pet-friendly rooms. </p>
+
+		</div>
+
+		<div class="slider" id="gallery-section">
+			
+			<div class="slide" id="slide-1"></div>
+			<div class="slide" id="slide-2"></div>
+			<div class="slide" id="slide-3"></div>
+			<div class="slide" id="slide-4"></div>
+			<div class="slide" id="slide-5"></div>
+			
+		</div>
+		
+		<p id="Scroll">Scroll Sideways For More.</p>
+
+		<div id="review-section">
+			
+			<h3 id="review-head">Guest Review</h3>
+			
+			<div class="review-subhead">
+
+				<div class="review1">
+
+					<h3 class="reviewer">Nikesh</h3>
+
+					<p class="comment">“Location is near to the highway.
+                        clean and good parking space available.”</p>
+
+				</div>
+
+				<div class="review2">
+
+					<h3 class="reviewer">Brandon</h3>
+
+					<p class="comment">“excellent hotel with large rooms and good facilities at an affordable price”</p>
+
+				</div>
+
+				<div class="review3">
+
+					<h3 class="reviewer">Joachim</h3>
+
+					<p class="comment">“Spacy room with comfortable beds. Stopover between Sequoia and San Francisco.”</p>
+
+				</div>
+				
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer>
+
+		<div id="contact-section">
+			
+			<h3 id="contact-head">Contact Us</h3>
+
+			<p id="phone"><i class="bi bi-telephone-inbound-fill"></i> Tel:+81-35-803-2155</p>
+			<p id="address">Address: 317 N. G St., Madera, CA 93637, United States</p>
+
+			<a href=https://www.google.com/maps/place/La+Quinta+Inn+%26+Suites+by+Wyndham+Madera/@36.9630666,-120.0658127,17z/data=!4m20!1m10!3m9!1s0x80940d6eee71ee93:0x7d479361d9815b57!2sLa+Quinta+Inn+%26+Suites+by+Wyndham+Madera!5m2!4m1!1i2!8m2!3d36.9630666!4d-120.063624!16s%2Fg%2F11gmg3h0x_!3m8!1s0x80940d6eee71ee93:0x7d479361d9815b57!5m2!4m1!1i2!8m2!3d36.9630666!4d-120.063624!16s%2Fg%2F11gmg3h0x_ target="_blank"><div id="map"></div></a>
+			
+		</div>
+
+		<div class="rights">
+			
+			<p id="Copyright">&copy; La Quinta by Wyndham Madera | All Rights Reserved. Developed By <a href="https://fritzdelacruz.github.io/mp2hotel/" target="_blank" id="portfolio">Fritz and Darvz</a>.</p>
+			
+		</div>
+
+	</footer>
+	
+	<script type="text/javascript" src="script.js"></script>
+	
+	<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "113139595024187");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+	
+	
+
+</body>
+
+</html>

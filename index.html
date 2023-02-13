@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+	<script>
+		function choosePlace() {
+			const url = document.getElementById("selectList").value;
+			window.location = url;
+		}
+	</script>
+</head>
+<body>
+    <header class="banner">
+		
+		<nav class="navigation" id="panelOne">
+			
+			<a href="index.html"><span id="home">Home</span></a>
+			<a href="#about-section"><span id="about">About</span></a>
+			<a href="#gallery-section"><span id="gallery">Gallery</span></a>
+			<a href="#review-section"><span id="review">Guest Reviews</span></a>
+			<a href="#contact-section"><span id="contact">Contact</span></a>
+			<a href="book-modal.html"><span id="book">Book Now</span></a>
+
+		</nav>
+		
+		<nav class="navBar">
+			
+			<button id="bar"><i class="fa fa-bars fa-2x" id="bar"></i></button>
+			<a href="book-modal.html"><span id="book" class="bookMe">Book Now</span></a>
+
+		</nav>
+
+		<nav id="panelTwo">
+			
+			<span class="close">&times;</span>
+
+			<a href="index.html"><span id="home">Home</span></a>
+			<a href="#about-section"><span id="about">About</span></a>
+			<a href="#gallery-section"><span id="gallery">Gallery</span></a>
+			<a href="#review-section"><span id="review">Guest Reviews</span></a>
+			<a href="#contact-section"><span id="contact">Contact</span></a>
+			<a href="book-modal.html"><span id="bookTwo">Book Now</span></a>
+
+		</nav>
+
+		
+
+	</header>
+
+	<form>
+		<select id="selectList" name="list">
+			<option value="" selected>Choose CIty Here</option>
+			<option value="bulacan.html">Bulacan, Phillipines</option>
+			<option value="paris.html">Paris France</option>
+			<option value="tokyoJap.html">Tokyo, Japan</option>
+			<option value="california.html">California, USA</option>
+			
+		</select>
+		<button type="button" value="Go" onclick="choosePlace()">Choose Place</button>
+	</form>
+    
+</body>
+</html>
